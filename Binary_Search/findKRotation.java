@@ -14,19 +14,15 @@ public class findKRotation {
         while (start <= end) {
             int mid = (start + end) / 2;
 
-            // the minimum element will be in the sorted array left most element
-            // so first find the sorted part
-            if (arr[start] <= arr[mid]) {
-                // left part is sorted
-                minIndex = Math.min(minIndex, start);
-                end = mid - 1;
-            } else {
-                minIndex = Math.min(minIndex, mid);
+            if (arr[mid] >= arr[0]) {
                 start = mid + 1;
-            }
 
+            } else {
+                end = mid - 1;
+            }
         }
-        System.out.println(minIndex);
+        minIndex = start;
+        System.out.println("Totat rotation  => " + start);
 
     }
 }
