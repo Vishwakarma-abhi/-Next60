@@ -44,4 +44,11 @@ class left_Right_Sum_Difference {
         return ans;
 
     }
+
+    
 }
+void main() {  
+  for (int i = 0; i < 5; i++) {  
+    print('hello ${i + 1}');  
+  }  
+}  
