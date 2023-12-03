@@ -2,7 +2,7 @@
 import java.util.*;
 
 //Single Number III --> Leetcode
-public class it a {
+public class Two_oddoccur {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
